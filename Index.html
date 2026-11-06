@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGE Search</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+
+        <div class="logo">
+            <h2>UGE<span>Search</span></h2>
+        </div>
+
+        <nav>
+            <a href="search.html">Home</a>
+            <a href="#education">Education</a>
+            <a href="#technology">Technology</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </div>
+
+    <div class="hero">
+        <h1>Universal Global Encyclopedia</h1>
+
+        <p>
+            Explore Knowledge. Discover the World.
+        </p>
+
+        <p>
+            Search for education, science,
+            technology, business and more.
+        </p>
+    </div>
+</header>
+
+
+    <main>
+        <form id="searchForm">
+            <input
+    type="search"
+    id="searchInput"
+    list="searchSuggestions"
+    placeholder="Search the Universe..."
+    required
+>
+
+<datalist id="searchSuggestions">
+</datalist>
+
+
+            <button type="submit">
+                Search
+            </button>
+        </form>
+
+        <section id="results">
+            <h2>Welcome to UGE Search</h2>
+            <p>
+                Discover education, technology,
+                business and global knowledge.
+            </p>
+        </section>
+    </main>
+<section class="knowledge-section">
+  <h2>Explore Knowledge</h2>
+  <p class="knowledge-intro">
+    Discover knowledge and information from different fields.
+  </p>
+
+  <div class="knowledge-grid">
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">🎓</div>
+      <h3>Education</h3>
+      <p>Learn skills, subjects and new ideas.</p>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">💻</div>
+      <h3>Technology</h3>
+      <p>Explore computers, software and innovation.</p>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">🔬</div>
+      <h3>Science</h3>
+      <p>Discover nature, experiments and discoveries.</p>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">💼</div>
+      <h3>Business</h3>
+      <p>Learn about business, trade and finance.</p>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">🌱</div>
+      <h3>Agriculture</h3>
+      <p>Explore farming, crops and livestock.</p>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="knowledge-icon">🏛️</div>
+      <h3>History</h3>
+      <p>Discover people, places and past events.</p>
+    </div>
+
+  </div>
+</section>
+    <footer>
+        <p>Universal Global Encyclopedia</p>
+        <p>Knowledge for Everyone</p>
+    </footer>
+
+  <script src="search.js"></script>
+</body>
+</html>

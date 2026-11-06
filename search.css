@@ -1,0 +1,351 @@
+/* UGE SEARCH ENGINE DESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #1a237e;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #ffd700;
+    font-size: 16px;
+}
+
+/* Main section */
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Search Form */
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 16px;
+    border: 2px solid #0d47a1;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #ffd700;
+}
+
+button {
+    background: #ffd700;
+    color: #0d47a1;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffca28;
+}
+
+/* Results */
+
+#results {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#results h2 {
+    margin-bottom: 15px;
+}
+
+#results p {
+    line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+/* SEARCH RESULT CARDS */
+
+.result-item {
+    background: #ffffff;
+    border: 1px solid #dbe3f5;
+    border-left: 5px solid #0d47a1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.result-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(13, 71, 161, 0.15);
+}
+
+.result-item h3 {
+    color: #0d47a1;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1.7;
+}
+/* UGE NAVIGATION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.logo h2 {
+    color: #0d47a1;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #d4a017;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4a017;
+}
+
+/* HOMEPAGE HERO */
+
+.hero {
+    padding: 45px 15px;
+    text-align: center;
+    background: #0d47a1;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #ffd700;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+}
+/* UGE Search Engine Professional Design */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #1b2a41;
+}
+
+header {
+    text-align: center;
+    background: #0b1f5b;
+    color: #ffd700;
+    padding: 30px 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: white;
+    font-size: 16px;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #0b1f5b;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 0;
+}
+
+#searchForm button {
+    background: #ffd700;
+    color: #0b1f5b;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background: #e6c200;
+}
+
+#results {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#results h2 {
+    color: #0b1f5b;
+}
+
+#results p {
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #0b1f5b;
+}
+/* KNOWLEDGE CATEGORIES */
+
+.knowledge-section {
+  padding: 35px 15px;
+  text-align: center;
+}
+
+.knowledge-section h2 {
+  color: #123b70;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.knowledge-intro {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.knowledge-card {
+  background: #ffffff;
+  padding: 20px 12px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.knowledge-card:hover {
+  transform: translateY(-5px);
+}
+
+.knowledge-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.knowledge-card h3 {
+  color: #123b70;
+  margin: 8px 0;
+}
+
+.knowledge-card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+  .knowledge-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
